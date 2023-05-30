@@ -15,7 +15,8 @@ export default {
       Cookie.set('menu', JSON.stringify(val))
     },
     // 动态注册路由
-    addMenu(state, router) {
+    addMenu(state, router)
+    {
       // 判断缓存中是否有数据
       if (!Cookie.get('menu')) return
       const menu = JSON.parse(Cookie.get('menu'))
